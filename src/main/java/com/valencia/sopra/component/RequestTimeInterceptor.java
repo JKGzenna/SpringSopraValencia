@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /** 
- * CLASE PARA CALCULAR EL TIEMPO EN ms DE LAS PETICIONES DE LAS VISTAS
+ *  CLASE PARA CALCULAR EL TIEMPO EN ms DE LAS PETICIONES DE LAS VISTAS
  *  USANDO EL EVENTO DE SPRING 'RequestTimeInterceptor' Y LOS METODOS
  *  'preHandle' y 'afterCompletion'
  * 
