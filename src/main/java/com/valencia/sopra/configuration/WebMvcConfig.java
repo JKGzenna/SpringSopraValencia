@@ -20,16 +20,20 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import com.valencia.sopra.component.RequestTimeInterceptor;
 
-/** Con esta anotación podemos usar la anotacion Scheduled del 
- *  modulo SpringBatch en clases con procesos repetitivos o por lotes */
+/** 
+ * CON ESTA ANOTACION 'EnableScheduling' PODEMOS USAR LA ANOTACION 
+ * 'Scheduled' DEL MODULO DE SPRING BATCH EN CLASES CON PROCESOS
+ * REPETITIVOS O POR LOTES
+ * 
+ * @author jlGoldaracena
+ * 
+ */
 @EnableScheduling
 @Configuration
 
-/** 
-   Para Spring 5 y SpringBoot 2 o superiores implementamos o en este
-   caso extendemos 'WebMvcConfigurer' en lugar de implementar o extender 
-   'WebMvcConfigurerAdapter' (deprecada a partir de estas versiones citadas)
-*/
+/** Para Spring 5 y SpringBoot 2 o superiores implementamos o en este
+    caso extendemos 'WebMvcConfigurer' en lugar de implementar o extender 
+    'WebMvcConfigurerAdapter' (deprecada a partir de estas versiones citadas) */
 
 /** descomentar este método para versiones superiores de SpringBoot 2 o Spring Framework 5 */
 //public class WebMvcConfig implements WebMvcConfigurer {
@@ -37,7 +41,8 @@ import com.valencia.sopra.component.RequestTimeInterceptor;
 /** descomentar este método para versiones inferiores de SpringBoot 2 o Spring Framework 5 */
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	
-	//PARA ATRAPAR EN EL LOG EL TIEMPO DE LAS PETICIONES DE LAS VISTAS
+	
+	/** CONFIGURACION DEL EVENTO 'RequestTimeInterceptor' */
 	@Autowired
 	@Qualifier("requestTimeInterceptor")
 	private RequestTimeInterceptor requestTimeInterceptor;

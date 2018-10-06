@@ -21,11 +21,16 @@ import com.valencia.sopra.repository.UserRepository;
 @Service("userService")
 public class UserService implements UserDetailsService {
 
+	/** INYECTAMOS NUESTRO 'UserRepository' */
 	@Autowired
 	@Qualifier("userRepository")
 	private UserRepository userRepository;
 	
-	
+	/** 
+	 *  ESTA CLASE COMPROBARA EL USUARIO USANDO LA CLASE 'SecurityConfiguration' Y DESPUES
+	 *  CONSTRUIRA AL USUARIO EN BASE AL USUARIO, PASSWORD Y SUS ROLES O PERMISOS CONCEDIDOS
+	 *  Y NOS LO RETORNARA CON EL ACCESO AL SISTEMA CONCEDIDO
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		com.valencia.sopra.entity.User user = userRepository.findByUsername(username);

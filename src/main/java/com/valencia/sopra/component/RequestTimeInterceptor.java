@@ -8,7 +8,10 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-/** Clase para calcular el tiempo en ms de las peticiones de las vistas
+/** 
+ * CLASE PARA CALCULAR EL TIEMPO EN ms DE LAS PETICIONES DE LAS VISTAS
+ *  USANDO EL EVENTO DE SPRING 'RequestTimeInterceptor' Y LOS METODOS
+ *  'preHandle' y 'afterCompletion'
  * 
  * @author jlGoldaracena
  *
