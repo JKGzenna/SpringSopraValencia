@@ -11,7 +11,7 @@ public class TestCrypt {
  	 * A CONTINUACION NOS VAMOS A BASE DE DATOS Y HACEMOS 2 INSERT, EL PRIMERO EN 
  	 * LA TABLA 'users' y EL SEGUNDO EN LA TABLA 'user_roles' .LOS INSERT PARA ESTA
  	 * TAREA DE REGISTRAR USUARIOS SE ENCUENTRAN EN LA HOJA DE SQL LLAMADA '
-	 * 'script de creacion de usuarios y roles'  SUBIDA AL GIT DENTRO DE LA CARPETA DEL PROYECTO  
+	 * 'script de creacion de usuarios y roles'  SUBIDA AL GIT DENTRO DE LA CARPETA DEL PROYECTO.  
 	 * 
 	 * @param args
 	 * 
