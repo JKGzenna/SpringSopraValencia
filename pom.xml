@@ -24,7 +24,7 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-<dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -47,6 +47,14 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+        <!-- DevTools, permite recargar el front sin necesidad de recargar el servidor, es más comodo sin duda que Spring Loaded -->
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.springframework.boot</groupId> -->
+<!-- 		<artifactId>spring-boot-devtools</artifactId> -->
+<!-- 		<scope>runtime</scope> -->
+<!-- 	</dependency> -->
+		<!-- Spring Loaded hace lo mismo que DevTools, permite recargar el front sin necesidad de recargar el servidor
+			 Para ello deberemos setear en el 'application.properties' la siguiente propiedad 'spring.thymeleaf.cache=false' -->
 		<dependency>
     		<groupId>org.springframework</groupId>
     		<artifactId>springloaded</artifactId>
